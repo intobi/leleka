@@ -1,3 +1,10 @@
-export default function Home() {
-  return <h1>Hello</h1>
+import React from 'react'
+import MainPage from '../components/main-page/main-page'
+
+const Home = () => {
+  return <>
+  <MainPage text={[]} />
+  </>
 }
+
+export default Home

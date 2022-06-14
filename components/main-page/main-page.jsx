@@ -86,7 +86,7 @@ const MainPage = ({text, lang}) => {
             </Row>
             <div className='wrapper__who-we-are'>
                 <h2>Хто ми</h2>
-                <p>Благодійний фонд "Лелека" заснований українцями з Карлових Вар і має на меті допомагати тим, хто
+                <p>Благодійний фонд &quot;Лелека&quot; заснований українцями з Карлових Вар і має на меті допомагати тим, хто
                     захищає Україну від агресора, а також тим, хто були вимушені переїхати до Чехії. <br/><br/>
 
                     Війна прийшла в наш дім ще 2014 року, коли перші російські військові та найманці захопили міста
@@ -97,7 +97,7 @@ const MainPage = ({text, lang}) => {
                     іншими предметами індивідуального захисту. До шпиталів Дніпра та Харкова були передані необхідні
                     ліки.<br/><br/>
 
-                    Настав час створити благодійний фонд, аби об'єднати зусилля багатьох людей і організацій. Об'єднати
+                    Настав час створити благодійний фонд, аби об&apos;єднати зусилля багатьох людей і організацій. Об&apos;єднати
                     заради перемоги, заради того, аби в Україні знову запанував мир.</p>
                 <Row style={{marginTop: '140px'}}>
                     <Col xl={6}>
@@ -136,30 +136,39 @@ const MainPage = ({text, lang}) => {
                 </ul>
                 <div className='wrapper__what-we-do__photo-set'>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof1}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof2}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof3}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof4}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof5}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof6}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof7}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof8}/>
                     </div>
                     <div>
+                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
                         <Image src={photoProof9}/>
                     </div>
                 </div>
@@ -192,7 +201,7 @@ const MainPage = ({text, lang}) => {
             </div>
         </div>
         <div className='footer'>
-            <div className='footer_container'>
+            <div className='footer__container'>
                 <div>
                     <div><Image src={logo} alt="leleka"/></div>
                     <div>

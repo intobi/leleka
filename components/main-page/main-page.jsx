@@ -136,40 +136,31 @@ const MainPage = ({text, lang}) => {
                 </ul>
                 <div className='wrapper__what-we-do__photo-set'>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof1}/>
+                        <Image src={photoProof1} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof2}/>
+                        <Image src={photoProof2} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof3}/>
+                        <Image src={photoProof3} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof4}/>
+                        <Image src={photoProof4} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof5}/>
+                        <Image src={photoProof5} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof6}/>
+                        <Image src={photoProof6} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof7}/>
+                        <Image src={photoProof7} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof8}/>
+                        <Image src={photoProof8} alt='Proof photo'/>
                     </div>
                     <div>
-                        {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                        <Image src={photoProof9}/>
+                        <Image src={photoProof9} alt='Proof photo'/>
                     </div>
                 </div>
             </div>
@@ -202,9 +193,9 @@ const MainPage = ({text, lang}) => {
         </div>
         <div className='footer'>
             <div className='footer__container'>
-                <div>
+                <div className='footer__container__first'>
                     <div><Image src={logo} alt="leleka"/></div>
-                    <div>
+                    <div className='footer__container__first__socials'>
                         <p>Слідкуйте за останніми новинами:</p>
                         <div>
                             <a target='_blank' href="#"><Image src={facebookIconWhite}/></a>
@@ -214,7 +205,7 @@ const MainPage = ({text, lang}) => {
                     </div>
                     <div><button className='button'>Допомогти</button></div>
                 </div>
-                <div>
+                <div  className='footer__container__second'>
                     <p>©2022 Leleka.cz.com</p>
                     <a target='_blank' rel="noreferrer" href="https://intobi.com/">powered by Intobi</a>
                 </div>

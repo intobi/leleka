@@ -312,6 +312,21 @@ body {
       flex-direction: column;
       padding-top: 40px;
       width: 100%;
+
+      &__first {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__socials {
+          display: flex;
+        }
+      }
+      &__second {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 }

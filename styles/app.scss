@@ -129,6 +129,41 @@ body {
     @media screen and (max-width: 1250px) {
       padding: 0 20px;
     }
+
+    background: left 44% top 3% no-repeat url('../images/icons/background-icons/1.svg'),
+    right 3% top 16% no-repeat url('../images/icons/background-icons/2.svg'),
+    left top 17% no-repeat url('../images/icons/background-icons/3.svg'),
+    right top 37% no-repeat url('../images/icons/background-icons/4.svg'),
+    left 5% bottom 10% no-repeat url('../images/icons/background-icons/5.svg'),
+    right bottom 11% no-repeat url('../images/icons/background-icons/6.svg');
+
+    @media  screen and (max-width: 1000px){
+      background: left 44% top 1% no-repeat url('../images/icons/background-icons/1.svg'),
+      right 3% top 12% no-repeat url('../images/icons/background-icons/2.svg'),
+      left 2% top 13% no-repeat url('../images/icons/background-icons/3.svg'),
+      right 2% top 37% no-repeat url('../images/icons/background-icons/4.svg'),
+      left 5% bottom 10% no-repeat url('../images/icons/background-icons/5.svg'),
+      right bottom 11% no-repeat url('../images/icons/background-icons/6.svg');
+    }
+
+    @media  screen and (max-width: 800px){
+      background: left 24% top 0.5% no-repeat url('../images/icons/background-icons/1.svg'),
+      right 3% top 18% no-repeat url('../images/icons/background-icons/2.svg'),
+      left 2% top 17% no-repeat url('../images/icons/background-icons/3.svg'),
+      right 2% top 37% no-repeat url('../images/icons/background-icons/4.svg'),
+      left 5% bottom 10% no-repeat url('../images/icons/background-icons/5.svg'),
+      right bottom 11% no-repeat url('../images/icons/background-icons/6.svg');
+    }
+
+    @media  screen and (max-width: 450px){
+      background: left 4% top 0.1% no-repeat url('../images/icons/background-icons/1.svg'),
+      right 3% top 10% no-repeat url('../images/icons/background-icons/2.svg'),
+      left 2% top 17% no-repeat url('../images/icons/background-icons/3.svg'),
+      right 2% top 37% no-repeat url('../images/icons/background-icons/4.svg'),
+      left 5% bottom 11.5% no-repeat url('../images/icons/background-icons/5.svg'),
+      right bottom 8% no-repeat url('../images/icons/background-icons/6.svg');
+    }
+
   }
 
   &__header-img {

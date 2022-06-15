@@ -66,21 +66,21 @@ const MainPage = ({text, lang}) => {
                         </div>
                     </div>
                     <div>
-                        <button className='button'>Допомогти</button>
+                        <button className='button header__help-button'>Допомогти</button>
                     </div>
                 </div>
             </div>
         </div>
         <div className='wrapper__content'>
-            <Row style={{marginTop: '80px'}}>
-                <Col xl={6}>
+            <Row className='wrapper__page-title-container'>
+                <Col md={6} lg={6} xl={6}>
                     <div className='wrapper__page-title'>
                         <h1>Leleka - Благодійний фонд</h1>
                         <p>У кожного свій фронт</p>
                         <button className='button'>Допомогти</button>
                     </div>
                 </Col>
-                <Col xl={6}>
+                <Col className='wrapper__header-img-container' md={6} lg={6} xl={6}>
                     <Image className='wrapper__header-img' src={headerImg} alt="we believe in zsu"/>
                 </Col>
             </Row>
@@ -100,15 +100,15 @@ const MainPage = ({text, lang}) => {
                     Настав час створити благодійний фонд, аби об&apos;єднати зусилля багатьох людей і організацій. Об&apos;єднати
                     заради перемоги, заради того, аби в Україні знову запанував мир.</p>
                 <Row style={{marginTop: '140px'}}>
-                    <Col xl={6}>
+                    <Col md={6} lg={6} xl={6}>
                         <div className='wrapper__who-we-are__feedback'>
                             <p>Хочеш допомогти</p>
                             <p>Ти людина, чи організація яка і має в наявності гуманітарні та медичні ресурси.</p>
                             <button className='button'>Хочу допогмоти</button>
                         </div>
                     </Col>
-                    <Col xl={6}>
-                        <div className='wrapper__who-we-are__feedback'>
+                    <Col md={6} lg={6} xl={6}>
+                        <div className='wrapper__who-we-are__feedback second'>
                             <p>Необхідна допомога</p>
                             <p>Ти людина, чи організація якій необхідна гуманітарні та медичні ресурси.</p>
                             <button className='button'>Необхідна допомога</button>

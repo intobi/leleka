@@ -84,6 +84,29 @@ export const langs = {
             'Реквізити',
             'Слідкуйте за останніми новинами:'
         ]
+    },
+    transfer: {
+        cz: [
+            'Informace pro fyzické osoby',
+            'Vážení, nepochybujte o tom, že každý váš příspěvek do fondu výrazně pomůže naší společné velké věci! Především vaše podpora znamená boj za mír, demokracii a solidaritu a hlavně mír pro Ukrajinu a celý civilizovaný svět. Každý z nás může hodně, ale společně můžeme všechno!',
+            'Informace pro právnické osoby',
+            'Vážení podnikatelé, každý váš finanční příspěvek pomůže těm, kteří potřebují pomoc a podporu, kteří stojí za ochranou míru a demokracie v Evropě a jsou garanty naší svobodné budoucnosti. Za charitativní finanční výlohy české legislativy počítá s daňovými úlevami. Pro sponzorské společnosti máme připravenou smlouvu, která je stanovena zákonem při charitativním příspěvku na konkrétní účelovou pomoc. Podporováním naší charitativní nadace podporujete naši svobodu!',
+            'Rekvizity | Leleka – nadační fond'
+        ],
+        en: [
+            'Information for Natural persons',
+            'Be sure that each of your contribution to the fund will help a lot in our common great goal! First of all, your support means the fight for peace, democracy and solidarity, and above all - peace for Ukraine and all civilised world. Everyone can do a lot, but together we can do everything!',
+            'Information for Juridical persons ',
+            'Dear entrepreneurs, each of your financial contributions will help those who need assistance and support, those who stand up for peace and democracy in Europe and are the guarantees of our free future. For the charitable financial contributions due to the Czech legislation there are tax benefits. For the company-sponsor we have prepared an agreement  provided by law when making a charitable contribution for the specific targeted assistance. By supporting our charity fund you support our freedom!',
+            'Bank transfer details | Leleka - charity fund'
+        ],
+        ua: [
+            'Інформація для фізичних осіб',
+            'Шановні, не майте сумнiв, що кожний ваш посильний внесок у фонд, значно допоможе нашiй спiльнiй великiй справi! Насамперед , ваша пiдтримка означає боротьбу за мир, демократiю i солiдарнiсть, та головне - мир для Украïни та всього цивiлiзованого світу. Кожен із нас може багато, але разом ми можемо все!',
+            'Інформація для підприємств',
+            'Шановні підприємці, кожен ваш фінансовий внесок допоможе тим, хто потребує допомоги та підтримки, хто стоїть на захисті миру та демократії в Європі та є гарантами нашого вільного майбутнього. За благодійні фінансові винесення Чеським законодавством передбачено податкові пільги. Для компаній-спонсорів у нас підготовлений договір, який передбачений законом при внесенні благодійного внеску на конкретну цільову допомогу. Підтримуючи наш благодійний фонд, ви підтримуєте нашу свободу!',
+            'Реквізити | Leleka - Благодійний фонд'
+        ],
     }
 
 }

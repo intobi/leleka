@@ -6,6 +6,7 @@ body {
   color: $dark;
 }
 
+
 .button {
   padding: 14px 32px;
   font-weight: 600;
@@ -23,6 +24,10 @@ body {
 
 .button:hover {
   border: solid 2px #7FABED;
+}
+
+.logo {
+  pointer-events: none;
 }
 
 ////////// Main page
@@ -169,6 +174,8 @@ body {
 
   &__header-img {
     border-radius: 40px;
+    pointer-events: none;
+    user-select: none;
   }
 
   &__header-img-container {
@@ -285,6 +292,11 @@ body {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-gap: 20px;
+
+      img {
+        pointer-events: none;
+        user-select: none;
+      }
 
       @media screen and (max-width: 750px) {
         grid-template-columns: repeat(2, 1fr);

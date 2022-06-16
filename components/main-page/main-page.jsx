@@ -52,7 +52,7 @@ const MainPage = ({text, lang}) => {
             <div className='header'>
                 <div className='header__container'>
                     <div>
-                        <Image src={logo} alt="leleka"/>
+                        <Image className='logo' src={logo} alt="leleka"/>
                     </div>
                     <div className='header__buttons'>
                         <div ref={selectEl} onClick={() => {
@@ -185,7 +185,7 @@ const MainPage = ({text, lang}) => {
             <div className='footer'>
                 <div className='footer__container'>
                     <div className='footer__container__first'>
-                        <div><Image src={logo} alt="leleka"/></div>
+                        <div><Image className='logo' src={logo} alt="leleka"/></div>
                         <div className='footer__container__first__socials'>
                             <p>{text[25]}</p>
                             <div>

@@ -108,7 +108,9 @@ const MainPage = ({text, lang}) => {
                             <div className='wrapper__who-we-are__feedback second'>
                                 <p>{text[9]}</p>
                                 <p>{text[10]}</p>
-                                <button className='button'>{text[9]}</button>
+                                <Link href={`${url}/need-resources`}>
+                                    <button className='button'>{text[9]}</button>
+                                </Link>
                             </div>
                         </Col>
                     </Row>

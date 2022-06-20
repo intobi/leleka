@@ -75,7 +75,9 @@ const MainPage = ({text, lang}) => {
                             </div>
                         </div>
                         <div>
-                            <button className='button header__help-button'>{text[0]}</button>
+                            <Link href={`${url}/have-resources`}>
+                                <button className='button header__help-button'>{text[0]}</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,9 @@ const MainPage = ({text, lang}) => {
                         <div className='wrapper__page-title'>
                             <h1>{text[1]}</h1>
                             <p>{text[2]}</p>
+                            <Link href={`${url}/have-resources`}>
                             <button className='button'>{text[0]}</button>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='wrapper__header-img-container' md={6} lg={6} xl={6}>
@@ -101,7 +105,9 @@ const MainPage = ({text, lang}) => {
                             <div className='wrapper__who-we-are__feedback'>
                                 <p>{text[7]}</p>
                                 <p>{text[8]}</p>
+                                <Link href={`${url}/have-resources`}>
                                 <button className='button'>{text[7]}</button>
+                                </Link>
                             </div>
                         </Col>
                         <Col md={6} lg={6} xl={6}>
@@ -202,7 +208,9 @@ const MainPage = ({text, lang}) => {
                             </div>
                         </div>
                         <div>
+                            <Link href={`${url}/have-resources`}>
                             <button className='button'>{text[0]}</button>
+                            </Link>
                         </div>
                     </div>
                     <div className='footer__container__second'>

@@ -29,7 +29,7 @@ const Select = ({name, error, options, call, value, onChange}) => {
         <div style={{position: 'relative'}}>
             <div onClick={() => {
                 setOpen(true)
-            }} className='select-filed__block'>
+            }} className={`select-filed__block ${error && 'input-filed__error-border'}`}>
                 <p>{title ? title : call}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"
                      fill="none">
@@ -44,7 +44,7 @@ const Select = ({name, error, options, call, value, onChange}) => {
                     {optionsArray}
                 </div>
             }
-            {error && <p>{error}</p>}
+            {error && <p className='select-filed__error'>{error}</p>}
 
         </div>
     </div>

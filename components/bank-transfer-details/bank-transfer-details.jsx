@@ -68,16 +68,13 @@ const BankTransferDetails = ({text, url}) => {
                         {select === 1 && <div>
                             <p className='bank-transfer-details-text' style={{fontSize: '20px'}}>
                                 <strong>BENEFICIARY/ PŘÍJEMCE/ОТРИМУВАЧ або Company</strong>
-                                <br/><br/>
                                 <strong>Name:</strong> Mezinárodní nadační fond Leleka
                                 <br/><br/>
                                 <strong>IČ:</strong> 170 919 77
                                 <br/><br/>
                                 <strong>Address:</strong> Hamerská 74/27, 360 01 Březová
                                 <br/><br/>
-                                <strong>IBAN Code (Euro):</strong>
-                                <br/><br/>
-                                <strong>IBAN Code (CZK):</strong> CZ96 2010 0000 0088 3355 8822
+                                <strong>IBAN Code:</strong> CZ28 2010 0000 0088 3355 8822
                                 <br/><br/>
                                 <strong>Name of the bank:</strong> Fio banka, a.s., Millennium Plaza, V Celnici 10 117
                                 21
@@ -95,9 +92,9 @@ const BankTransferDetails = ({text, url}) => {
                             <p className='bank-transfer-details-text' style={{fontSize: '20px'}}>
                                 <strong> ACCOUNT/ÚČET/РАХУНОК:</strong><br/>
                                 8833558822/2010
-                                BENEFICIARY/ PŘÍJEMCE/
-                                ОТРИМУВАЧ або Company
                                 <br/><br/>
+                                <strong> BENEFICIARY/ PŘÍJEMCE/
+                                ОТРИМУВАЧ або Company</strong>
                                 <strong>Name:</strong> Mezinárodní nadační fond Leleka
                                 <br/><br/>
                                 <strong>IČ:</strong> 170 919 77

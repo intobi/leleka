@@ -26,6 +26,24 @@ body {
   border: solid 2px #7FABED;
 }
 
+.button.disabled {
+  background: #B3B3B3;
+  border-color: #B3B3B3;
+  pointer-events: none;
+}
+
+.button.loading {
+  pointer-events: none;
+  color: $base-color;
+  position: relative;
+}
+.button.loading:after {
+  content: url("../images/icons/loader.svg");
+  position: absolute;
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+}
+
 .logo {
   pointer-events: none;
 }
@@ -605,12 +623,19 @@ body {
 
 .input-filed {
   margin: 8px;
+  @media screen and (max-width: 1000px) {
+    margin-top: 20px;
+  }
 
   &__error {
     color: #E32B2B;
     position: absolute;
     left: 0;
     top: 65px;
+  }
+
+  &__error-border {
+    border: solid 1px #E32B2B !important;
   }
 
   &__name {
@@ -622,12 +647,13 @@ body {
 
   input {
     background: #FFFFFF;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #CACACA;
     border-radius: 8px;
     height: 60px;
     padding-left: 10px;
     outline: none;
     transition: .25s;
+    width: 100%;
   }
 
   input:focus {
@@ -638,6 +664,13 @@ body {
 
 .select-filed {
   margin: 8px;
+  @media screen and (max-width: 1000px) {
+    margin-top: 20px;
+  }
+
+  &__error-border {
+    border: solid 1px #E32B2B !important;
+  }
 
   &__name {
     font-weight: 500;
@@ -646,9 +679,16 @@ body {
     margin-bottom: 8px;
   }
 
+  &__error {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    color: #E32B2B;
+  }
+
   &__block {
     background: #FFFFFF;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #CACACA;
     border-radius: 8px;
     height: 60px;
     padding-left: 10px;
@@ -700,11 +740,151 @@ body {
 }
 
 .need-resources-form {
-  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .need-resources-title {
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 50px;
+}
+
+.need-resources-form-second {
+  display: flex;
+  margin-top: 60px;
+  position: relative;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    margin-bottom: 150px;
+    padding: 8px;
+
+    > div:last-child {
+      margin-top: 10px;
+
+      button {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.phone-field {
+  margin: 0 8px;
+  width: 100%;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  @media screen and (max-width: 500px) {
+    width: auto !important;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+  }
+
+  &__error {
+    color: #E32B2B;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  &__error-styles {
+    .form-control {
+      border: solid 1px red !important;
+    }
+    .flag-dropdown  {
+      border-left: solid 1px red !important;
+      border-top: solid 1px red !important;
+      border-bottom: solid 1px red !important;
+    }
+    .selected-flag {
+      border: solid 1px transparent;
+    }
+  }
+
+  .form-control {
+    height: 56px !important;
+    border-radius: 8px !important;
+    width: inherit !important;
+  }
+
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+
+  .react-tel-input {
+    height: 56px !important;
+  }
+
+  .flag-dropdown {
+    border-radius: 8px 0 0 8px !important;
+  }
+
+  .selected-flag {
+    border-radius: 8px 0 0 8px !important;
+  }
+
+  .country-list {
+    border-radius: 8px !important;
+  }
+}
+
+.need-resources-page-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.need-resources-page-logo {
+  @media screen and (max-width: 550px) {
+    display: none !important;
+  }
+}
+
+.overlay-feedback {
+  width: 100vw;
+  height: 110vh;
+  position: fixed;
+}
+
+.overlay-feedback__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 136px);
+
+  p {
+    text-align: center;
+  }
+
+  p:nth-child(1) {
+    font-weight: 700;
+    font-size: 48px;
+    color: $base-color !important;
+  }
+
+  p:nth-child(2) {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  p:nth-child(3) {
+    font-weight: 500;
+    font-size: 20px;
+  }
 }

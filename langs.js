@@ -212,7 +212,11 @@ export const langs = {
             'Hotovo, odeslat formulář',
             'Povinné pole',
             'Vyberte jednu nebo více kategorií',
-            'Mám zdroje | Leleka – nadační fond'
+            'Mám zdroje | Leleka – nadační fond',
+            'Děkuji!',
+            'Vaše žádost byla odeslána.',
+            'Očekávejte telefonát operátora pro další spolupráci',
+
         ],
         en: [
             'I have resources',
@@ -243,7 +247,10 @@ export const langs = {
             'Done, submit form',
             'Required field',
             'Select one or more categories',
-            'I have resources | Leleka - charity fund'
+            'I have resources | Leleka - charity fund',
+            'Thank you!',
+            'Your application has been submitted.',
+            'Expect a call from the operator for further cooperation',
         ],
         ua: [
             'Маю ресурси',
@@ -274,7 +281,10 @@ export const langs = {
             'Готово, відправити форму',
             'Обов’язкове поле',
             'Оберіть одну або декілька категорій',
-            'Маю ресурси | Leleka - Благодійний фонд'
+            'Маю ресурси | Leleka - Благодійний фонд',
+            'Дякую!',
+            'Ваша заявка була відправлена.',
+            'Очікуйте дзівнка від оператора для подальщой співдії',
         ]
     }
 }

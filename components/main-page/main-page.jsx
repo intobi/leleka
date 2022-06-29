@@ -184,11 +184,11 @@ const MainPage = ({text, lang}) => {
                 <div className='wrapper__our-team'>
                     <h3>Our Team</h3>
                     <div>
-                        <a target='_blank' href="https://www.facebook.com/TatiNikolajeva">
+                        <a rel="noreferrer" target='_blank' href="https://www.facebook.com/TatiNikolajeva">
                             <p>Taťjana Nikolajeva</p>
                             <p>Facebook</p>
                         </a>
-                        <a target='_blank' href="https://www.facebook.com/denys.leonti">
+                        <a rel="noreferrer" target='_blank' href="https://www.facebook.com/denys.leonti">
                             <p>Denys Leonti</p>
                             <p>Facebook</p>
                         </a>

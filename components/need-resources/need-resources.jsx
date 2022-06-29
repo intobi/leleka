@@ -5,7 +5,8 @@ import Link from 'next/link'
 import Input from '../elements/input/input'
 import Select from '../elements/select/select'
 import PhoneField from '../elements/phone-input/phone-input'
-import Head from "next/head";
+import Head from 'next/head'
+import {Api} from '../../api'
 
 const NeedResources = ({text, url}) => {
 
@@ -95,9 +96,11 @@ const NeedResources = ({text, url}) => {
 
         if (!CheckValidation()) {
             setLoading(true)
-            setTimeout(() => {
-                setFeedBack(true)
-            }, 500)
+            Api.sendNeedResourcesData(state).then(r => {
+                if (r.status === 200) {
+                    setFeedBack(true)
+                }
+            })
         }
     }
 

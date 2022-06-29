@@ -6,7 +6,8 @@ import SecondInput from '../elements/second-input/input'
 import CheckBox from '../elements/checkbox/checkbox'
 import RadioButton from '../elements/radio-button/radio-button'
 import PhoneField from '../elements/phone-input/phone-input'
-import Head from "next/head";
+import Head from 'next/head'
+import {Api} from '../../api'
 
 const HaveResources = ({text, url}) => {
 
@@ -106,10 +107,11 @@ const HaveResources = ({text, url}) => {
     const SendData = () => {
         if (!CheckValidation()) {
             setLoading(true)
-            setTimeout(() => {
-                setLoading(false)
-                setFeedBack(true)
-            }, 500)
+            Api.sendHaveResourcesData(state).then(r => {
+                if (r.status === 200) {
+                    setFeedBack(true)
+                }
+            })
         }
     }
 

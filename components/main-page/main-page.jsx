@@ -75,7 +75,7 @@ const MainPage = ({text, lang}) => {
                             </div>
                         </div>
                         <div>
-                            <Link href={`${url}/have-resources`}>
+                            <Link href={`${url}/bank-transfer-details`}>
                                 <button className='button header__help-button'>{text[0]}</button>
                             </Link>
                         </div>
@@ -88,7 +88,7 @@ const MainPage = ({text, lang}) => {
                         <div className='wrapper__page-title'>
                             <h1>{text[1]}</h1>
                             <p>{text[2]}</p>
-                            <Link href={`${url}/have-resources`}>
+                            <Link href={`${url}/bank-transfer-details`}>
                             <button className='button'>{text[0]}</button>
                             </Link>
                         </div>
@@ -208,7 +208,7 @@ const MainPage = ({text, lang}) => {
                             </div>
                         </div>
                         <div>
-                            <Link href={`${url}/have-resources`}>
+                            <Link href={`${url}/bank-transfer-details`}>
                             <button className='button'>{text[0]}</button>
                             </Link>
                         </div>

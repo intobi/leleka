@@ -204,7 +204,7 @@ const HaveResources = ({text, url}) => {
                                checked={state.policy}/>
                         <div style={{display: 'flex', flexDirection: 'column'}}>
                             <label htmlFor='policy'>{text[23]}</label>
-                            <Link href='#'>{text[24]}</Link>
+                            <Link href={`${url === 'cz' ? '' : '/' + url}/gdpr`}>{text[24]}</Link>
                         </div>
                     </div>
 

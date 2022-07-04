@@ -169,9 +169,9 @@ const MainPage = ({text, lang}) => {
                 <div className='wrapper__socials-info'>
                     <p>{text[21]}</p>
                     <div>
-                        <a target='_blank' href="#"><Image src={facebookIcon}/></a>
-                        <a target='_blank' href="#"><Image src={twitterIcon}/></a>
-                        <a target='_blank' href="#"><Image src={instagramIcon}/></a>
+                        <a rel="noreferrer" target='_blank' href="https://www.facebook.com/lelekafond"><Image src={facebookIcon}/></a>
+                        <a rel="noreferrer" target='_blank' href="https://twitter.com/FondLeleka?t=iV81brfwqeHzkYC5My7tgA&s=09"><Image src={twitterIcon}/></a>
+                        <a rel="noreferrer" target='_blank' href="https://instagram.com/leleka_fond?igshid=YmMyMTA2M2Y="><Image src={instagramIcon}/></a>
                     </div>
                 </div>
                 <div className='wrapper__financial-aid'>
@@ -202,9 +202,9 @@ const MainPage = ({text, lang}) => {
                         <div className='footer__container__first__socials'>
                             <p>{text[25]}</p>
                             <div>
-                                <a target='_blank' href="#"><Image src={facebookIconWhite}/></a>
-                                <a target='_blank' href="#"><Image src={twitterIconWhite}/></a>
-                                <a target='_blank' href="#"><Image src={instagramIconWhite}/></a>
+                                <a rel="noreferrer" target='_blank' href="https://www.facebook.com/lelekafond"><Image src={facebookIconWhite}/></a>
+                                <a rel="noreferrer" target='_blank' href="https://twitter.com/FondLeleka?t=iV81brfwqeHzkYC5My7tgA&s=09"><Image src={twitterIconWhite}/></a>
+                                <a rel="noreferrer" target='_blank' href="https://instagram.com/leleka_fond?igshid=YmMyMTA2M2Y="><Image src={instagramIconWhite}/></a>
                             </div>
                         </div>
                         <div>

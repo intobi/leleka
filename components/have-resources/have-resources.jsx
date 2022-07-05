@@ -80,13 +80,12 @@ const HaveResources = ({text, url}) => {
                         categoryHaveError = false
                     }
                 }
-
                 if (categoryHaveError) {
                     haveError = categoryHaveError
                     errorsObj[key] = errorsTextArray[key]
                 }
-
-
+            } else if (key === 'delivery') {
+                haveError = false
             } else if (!state[key]) {
                 haveError = true
                 errorsObj[key] = errorsTextArray[key]

@@ -1,10 +1,11 @@
 import {SMTPClient} from 'emailjs'
 
+
 const client = new SMTPClient({
     user: process.env.EMAIL,
     password: process.env.PASSWORD_EMAIL,
     host: 'smtp.gmail.com',
-    ssl: true
+    ssl: false
 })
 
 const returnCategories = (category) => {

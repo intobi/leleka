@@ -214,7 +214,7 @@ const MainPage = ({text, lang}) => {
                         </div>
                     </div>
                     <div className='footer__container__second'>
-                        <p>©2022 Leleka.cz.com</p>
+                        <p>©2022 lelekafond.cz</p>
                         <a target='_blank' rel="noreferrer" href="https://intobi.com/">powered by Intobi</a>
                     </div>
                 </div>

@@ -1,12 +1,24 @@
-import {SMTPClient} from 'emailjs'
+export default function handler(req, res) {
+    const sgMail = require('@sendgrid/mail')
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+    if (req.method === 'POST') {
+        const msg = {
+            to: process.env.TO_EMAIL,
+            from: process.env.FROM_EMAIL,
+            subject: 'lelekafond.cz | Форма надання допомоги',
+            html: returnMessageTemplate(req.body),
+        }
 
-
-const client = new SMTPClient({
-    user: process.env.EMAIL,
-    password: process.env.PASSWORD_EMAIL,
-    host: 'smtp.gmail.com',
-    ssl: false
-})
+        sgMail
+            .send(msg)
+            .then(() => {
+                res.status(200).json(req.body)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+    }
+}
 
 const returnCategories = (category) => {
 
@@ -106,27 +118,4 @@ const returnMessageTemplate = (data) => {
     <th  style="text-align: left; padding: 10px; border: solid 1px gray;">${notes}</th>
   </tr>
 </table>`
-}
-
-export default function handler(req, res) {
-    if (req.method === 'POST') {
-
-        try {
-            client.send(
-                {
-                    text: '',
-                    from: process.env.EMAIL,
-                    to: process.env.TO_EMAIL,
-                    subject: 'lelekafund.com | Форма надання допомоги',
-                    attachment: [
-                        {data: returnMessageTemplate(req.body), alternative: true}
-                    ],
-                },
-                () => {
-                    res.status(200).json(req.body)
-                }
-            )
-        } catch (e) {
-        }
-    }
 }

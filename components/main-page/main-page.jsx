@@ -3,10 +3,10 @@ import Image from 'next/image'
 import logo from '../../images/Logo.svg'
 import headerImg from '../../images/header-img.jpg'
 import facebookIcon from '../../images/icons/facebook.svg'
-import twitterIcon from '../../images/icons/twitter.svg'
+import twitterIcon from '../../images/icons/x-social.svg'
 import instagramIcon from '../../images/icons/instagram.svg'
 import facebookIconWhite from '../../images/icons/facebookWhite.svg'
-import twitterIconWhite from '../../images/icons/twitterWhite.svg'
+import twitterIconWhite from '../../images/icons/x-social-white.svg'
 import instagramIconWhite from '../../images/icons/instagramWhite.svg'
 
 import photoProof1 from '../../images/Rectangle 8.jpg'
@@ -51,7 +51,8 @@ const MainPage = ({text, lang}) => {
             <title>{text[1]}</title>
         </Head>
         <div className='wrapper'>
-            <div className='header'>
+            <div className='header leleka-class'>
+
                 <div className='header__container'>
                     <div>
                         <Image className='logo' src={logo} alt="leleka"/>
@@ -170,16 +171,25 @@ const MainPage = ({text, lang}) => {
                     <p>{text[21]}</p>
                     <div>
                         <a rel="noreferrer" target='_blank' href="https://www.facebook.com/lelekafond"><Image src={facebookIcon}/></a>
-                        <a rel="noreferrer" target='_blank' href="https://twitter.com/FondLeleka?t=iV81brfwqeHzkYC5My7tgA&s=09"><Image src={twitterIcon}/></a>
+                        <a rel="noreferrer" target='_blank' href="https://x.com/lelekafond"><Image src={twitterIcon}/></a>
                         <a rel="noreferrer" target='_blank' href="https://instagram.com/leleka_fond?igshid=YmMyMTA2M2Y="><Image src={instagramIcon}/></a>
                     </div>
                 </div>
                 <div className='wrapper__financial-aid'>
                     <h3>{text[22]}</h3>
                     <p>{text[23]}</p>
-                    <Link href={`${url}/bank-transfer-details`}>
-                        <button className='button'>{text[24]}</button>
-                    </Link>
+                    <a
+  href="https://drive.google.com/drive/folders/1S1JsPu6qFvecvYyqvEmSQOHpYNqoeOkC?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+<button className='button'>{text[24]}</button>
+</a>
+
+
+                    {/* <Link href={`https://drive.google.com/drive/folders/1S1JsPu6qFvecvYyqvEmSQOHpYNqoeOkC?usp=sharing`} target='_blank'>
+                    <button className='button'>{text[24]}</button>
+                    </Link> */}
                 </div>
                 <div className='wrapper__our-team'>
                     <h3>Our Team</h3>
@@ -203,7 +213,7 @@ const MainPage = ({text, lang}) => {
                             <p>{text[25]}</p>
                             <div>
                                 <a rel="noreferrer" target='_blank' href="https://www.facebook.com/lelekafond"><Image src={facebookIconWhite}/></a>
-                                <a rel="noreferrer" target='_blank' href="https://twitter.com/FondLeleka?t=iV81brfwqeHzkYC5My7tgA&s=09"><Image src={twitterIconWhite}/></a>
+                                <a rel="noreferrer" target='_blank' href="https://x.com/lelekafond"><Image src={twitterIconWhite}/></a>
                                 <a rel="noreferrer" target='_blank' href="https://instagram.com/leleka_fond?igshid=YmMyMTA2M2Y="><Image src={instagramIconWhite}/></a>
                             </div>
                         </div>

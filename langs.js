@@ -23,9 +23,9 @@ export const langs = {
             's organizací dětského volného času ',
             'humanitární pomocí (věci, obuv, nádobí, nábytek a zařízení do bytů, dětské kočárky, hráčky atd.) spolu se spolkem Nádech z.s. v Karlových Varech',
             'Více detailní informací na našich sociálních sítích',
-            'Finanční pomoc na sběr zdrojů',
-            'Za finanční dary Leleka nakupuje dostupné zdroje a dodává Ukrajincům podle potřeby',
-            'Rekvizity',
+            'Naše aktivity',
+            'Finanční, doprovodné a vykazovací dokumenty fondu.',
+            'Informace',
             'Sledujte nejnovější zprávy:'
         ],
         en: [
@@ -51,9 +51,9 @@ export const langs = {
             'organisation of children’s activities;',
             'humanitarian help (clothes, shoes, etc);',
             'More detailed information is in our social media',
-            'Financial assistance for collection of the resources',
-            'For the money transferred Leleka buys available resources and supply to Ukrainians when needed',
-            'Bank transfer details',
+            'Our activities',
+            'Financial, supporting and reporting documents of the fund.',
+            'Information',
             'Follow the latest news:'
         ],
         ua: [
@@ -79,9 +79,9 @@ export const langs = {
             'з організацією дитячого дозвілля',
             'гуманітарною допомогою (речі, взуття тощо)',
             'Більше детальної інформації у наших соціальних мережах',
-            'Фінансова допомога на збір ресурсів',
-            'За переказані кошти Leleka закуповує доступні ресурси та постачає українцям у потребі.',
-            'Реквізити',
+            'Наша діяльність',
+            'Фінансові, супровідні та звітні документи фонду.',
+            'Інформація',
             'Слідкуйте за останніми новинами:'
         ]
     },
